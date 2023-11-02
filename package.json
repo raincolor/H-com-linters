@@ -1,0 +1,61 @@
+{
+  "name": "h-com-linters",
+  "version": "1.0.0",
+  "description": "Vue3项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
+  "bin": "lib/bin.js",
+  "main": "lib/index.js",
+  "repository": "https://github.com/raincolor/H-com-linters",
+  "author": "raincolor",
+  "license": "MIT",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "build": "tsc",
+    "lint": "eslint src --ext .ts",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-define-config": "^1.18.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.11.0",
+    "husky": "^8.0.3",
+    "less": "^4.1.3",
+    "lint-staged": "^13.2.1",
+    "postcss": "^8.4.22",
+    "postcss-html": "^1.5.0",
+    "postcss-less": "^6.0.0",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.5.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-order": "^6.0.3",
+    "vue-eslint-parser": "^9.3.1"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^12.0.1",
+    "@semantic-release/npm": "^10.0.3",
+    "semantic-release": "^21.0.0",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "lib/*",
+    "configs/*"
+  ]
+}
