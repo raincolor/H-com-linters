@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/raincolor/H-com-linters/compare/v1.0.0...v1.1.0) (2023-11-03)
+
+
+### Features
+
+* 更新readme ([76e3872](https://github.com/raincolor/H-com-linters/commit/76e3872b38559801cd29b45efe312dcffbe2c032))
+
 # 1.0.0 (2023-11-03)
 
 
