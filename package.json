@@ -4,14 +4,15 @@
   "description": "Vue3项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
   "bin": "lib/bin.js",
   "main": "lib/index.js",
-  "repository": "https://github.com/raincolor/H-com-linters",
+
   "author": "raincolor",
   "license": "MIT",
   "scripts": {
     "semantic-release": "semantic-release",
     "build": "tsc",
     "lint": "eslint src --ext .ts",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "release": "semantic-release"
   },
   "engines": {
     "node": ">=14"
@@ -44,15 +45,30 @@
     "vue-eslint-parser": "^9.3.1"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/github": "^9.2.1",
+    "@semantic-release/release-notes-generator": "^12.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/gitlab": "^12.0.1",
     "@semantic-release/npm": "^10.0.3",
-    "semantic-release": "^21.0.0",
+    "semantic-release": "^21.0.2",
     "typescript": "^5.0.4"
   },
+
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
+
+  "repository": "https://github.com/raincolor/H-com-linters",
+  "keywords": [
+    "husky",
+    "lint-staged",
+    "eslint",
+    "lint-staged",
+    "stylelint",
+    "prettier",
+    "commitlint"
+  ],
   "files": [
     "index.js",
     "lib/*",
