@@ -4,7 +4,7 @@ Vue3 项目的 husky + lint-staged + eslint + stylelint + prettier + commitlint 
 
 # 使用
 
-**前置条件**
+**前置条件 **
 
 1. [ git rigistry 配置](https://xxx)
 2. IDE 安装 eslint、stylelint、prettier 插件，用于编码时的提醒
