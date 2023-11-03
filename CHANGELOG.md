@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/raincolor/H-com-linters/compare/v1.4.0...v1.5.0) (2023-11-03)
+
+
+### Features
+
+* 更新readme ([98e5a83](https://github.com/raincolor/H-com-linters/commit/98e5a832b6468fa9bf8de93dfd34a92ea5624061))
+* 添加npx clicreate Name  脚手架 构建命令 ([5842c8a](https://github.com/raincolor/H-com-linters/commit/5842c8a41a2991dabe7342539d31662e9e80e5c1))
+
 # [1.4.0](https://github.com/raincolor/H-com-linters/compare/v1.3.0...v1.4.0) (2023-11-03)
 
 
