@@ -7,9 +7,12 @@ Vue3 项目的 husky + lint-staged + eslint + stylelint + prettier + commitlint 
 **前置条件 **
 
 
-1. IDE 安装 eslint、stylelint、prettier 插件，用于编码时的提醒
-
-在 package.json 中添加
+1.安装 h-com-linters
+```
+npm install h-com -linters
+```
+2.IDE 安装 eslint、stylelint、prettier 插件，用于编码时的提醒
+3.在 package.json 中添加
 
 ```
 // windows
