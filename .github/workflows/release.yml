@@ -26,7 +26,7 @@ jobs:
       # 安装依赖，包括我们的 semantic-release 全套
       - name: Install
         run: |
-          npm install
+          npm ci
       
       # # 打包你的插件/组件/库等等等
       # - name: Build
