@@ -52,8 +52,13 @@ yarn add -D h-com-linters
 h-com-linters 自动会安装相关的依赖包，并将 husky 配置、代码检查相关配置、commit 提交配置都拷贝到项目下。
 
 4.还可以作为一个简易的脚手架使用
-npm h-com-linters  -g 全局安装后
+```
+npm h-com-linters  -g
+```
+全局安装后
+```
 h-com-linters clicreate yourProjectName
+```
 
 # 构建 & 发布
 
