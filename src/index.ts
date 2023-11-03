@@ -2,11 +2,12 @@ import cp = require("child_process");
 import fs = require("fs");
 import p = require("path");
 
+
 // Logger
 const l = (msg: string): void => console.log(`h-com-linters - ${msg}`);
 
 //npx command
-const npx = (args: string[]): cp.SpawnSyncReturns<Buffer> =>
+export  const npx = (args: string[]): cp.SpawnSyncReturns<Buffer> =>
   // child_process.spawnSync() 同步方法， 方法与 [child_process.spawn()]（异步） 基本相同，除了该方法直到子进程完全关闭后才返回。
   cp.spawnSync("npx", args, { stdio: "inherit", shell: true });
 

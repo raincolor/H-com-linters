@@ -2,6 +2,8 @@
 import p = require("path");
 import h = require("./");
 
+import {create}  from './cli'
+
 // Show usage and exit with code
 function help(code: number) {
   console.log(`Usage:
@@ -21,6 +23,7 @@ const [x] = args;
 const cmds: { [key: string]: () => void } = {
   install: (): void => (ln > 1 ? help(2) : h.install(x)),
   uninstall: h.uninstall,
+  clicreate:()=>create(x),
   ["-v"]: () =>
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-var-requires
     console.log(require(p.join(__dirname, "../package.json")).version),
