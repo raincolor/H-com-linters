@@ -4,7 +4,7 @@ Vue3 项目的 husky + lint-staged + eslint + stylelint + prettier + commitlint 
 
 # 目 录 结 构
 ```
-arduino复制代码configs // .husky+commitlint+eslint + stylelint + prettier + commitlint等 配置集合
+configs // .husky+commitlint+eslint + stylelint + prettier + commitlint等 配置集合
     -- .husky // git hooks .husky文件配置
     -- .commitlintrc.js // commitlint配置
     -- .eslintignore.ts // eslint忽略配置
