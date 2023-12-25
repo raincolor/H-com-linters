@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/raincolor/H-com-linters/compare/v1.5.0...v1.6.0) (2023-12-25)
+
+
+### Features
+
+* prettier 升级 ([15dedb9](https://github.com/raincolor/H-com-linters/commit/15dedb9e20670fc59f660aad91e270041284d3d6))
+
 # [1.5.0](https://github.com/raincolor/H-com-linters/compare/v1.4.0...v1.5.0) (2023-11-03)
 
 
