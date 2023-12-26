@@ -14,6 +14,7 @@ export  const npx = (args: string[]): cp.SpawnSyncReturns<Buffer> =>
 const notCopyWhenExistRule = /tsconfig\.json$/;
 
 export function install(dir = "."): void {
+
   // Ensure that we're inside a git repository
   // If git command is not found, status is null and we should return.
   // That's why status value needs to be checked explicitly.
@@ -29,13 +30,18 @@ export function install(dir = "."): void {
       {
         recursive: true,
         filter(source, destination) {
-          // 不能直接覆盖原有的tsconfig。json
+
+          // 不能直接覆盖原有的tsconfig.json
           if (notCopyWhenExistRule.test(source) && fs.existsSync(destination)) {
             l(
               "tsconfig.json already exists, if you want to use the file in h-com-linters, please delete it first"
             );
             return false;
           }
+          if (notCopyWhenExistRule.test(source) && dir == '--js') {
+                  
+            return false;
+        }
           return true;
         },
       },

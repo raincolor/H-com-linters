@@ -9,7 +9,7 @@ module.exports = {
     trailingComma: 'all',
     proseWrap: 'never',
     htmlWhitespaceSensitivity: 'strict',
-    tabWidth: 2,
+    tabWidth: 4,
     endOfLine: 'auto',
 };
 
@@ -28,7 +28,7 @@ module.exports = {
 //     arrowParens: 'always', //单参数箭头函数参数周围使用圆括号-eg: (x) => x
 //     requirePragma: false, //无需顶部注释即可格式化
 //     insertPragma: false, //在已被preitter格式化的文件顶部加上标注
-//     proseWrap: 'preserve', //不知道怎么翻译
+//     proseWrap: 'preserve', //
 //     htmlWhitespaceSensitivity: 'ignore', //对HTML全局空白不敏感
 //     vueIndentScriptAndStyle: false, //不对vue中的script及style标签缩进
 //     endOfLine: 'lf', //结束行形式
