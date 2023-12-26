@@ -26,7 +26,7 @@ export function install(dir = "."): void {
   try {
     fs.cp(
       p.join(__dirname, "../configs"),
-      p.join(dir),
+      p.join(dir == '--js'?'.':dir),
       {
         recursive: true,
         filter(source, destination) {
