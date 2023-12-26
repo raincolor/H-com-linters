@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/raincolor/H-com-linters/compare/v1.6.0...v1.7.0) (2023-12-26)
+
+
+### Features
+
+* 添加 postcss-scss ([08fbfee](https://github.com/raincolor/H-com-linters/commit/08fbfee68827b535d1c156e120f7724181fc927a))
+
 # [1.6.0](https://github.com/raincolor/H-com-linters/compare/v1.5.0...v1.6.0) (2023-12-25)
 
 
