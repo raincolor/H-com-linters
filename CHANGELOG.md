@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/raincolor/H-com-linters/compare/v1.7.0...v1.8.0) (2023-12-26)
+
+
+### Features
+
+* 添加 ts js 项目识别 ([888c9fb](https://github.com/raincolor/H-com-linters/commit/888c9fb227180a115a9d0a436622722249cb56ac))
+
 # [1.7.0](https://github.com/raincolor/H-com-linters/compare/v1.6.0...v1.7.0) (2023-12-26)
 
 
