@@ -9,6 +9,7 @@ function help(code: number) {
   console.log(`Usage:
   h-com-linters install
   h-com-linters uninstall
+  h-com-linters clicreate xxx
   `);
   process.exit(code);
 }
