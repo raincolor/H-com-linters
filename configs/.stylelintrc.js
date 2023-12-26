@@ -8,6 +8,10 @@ module.exports = {
       customSyntax: 'postcss-less',
     },
     {
+      files: ['**/*.(scss)'],
+      customSyntax: 'postcss-scss',
+    },
+    {
       files: ['**/*.(html|vue)'],
       customSyntax: 'postcss-html',
     },

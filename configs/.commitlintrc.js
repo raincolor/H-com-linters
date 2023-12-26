@@ -1,6 +1,6 @@
 /*
  * @Description: commit-msg提交信息格式规范
- * 
+ *
  * commit-msg格式: <type>(scope?): <subject>
  *   - type: 用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？
  *     - build: 编译相关的修改，例如发布版本、对项目构建或者依赖的改动
@@ -18,22 +18,26 @@
  *   - Subject：一句话描述此次提交的主要内容，做到言简意赅
  */
 
-
-
 module.exports = {
-    ignores: [(commit) => commit.includes('init')],
-    extends: ['@commitlint/config-conventional'],
-    // rule由name和配置数组组成，如：'name: [0, 'always', 72]'，数组中第一位表示level，可选0,1,2，0为disable，1为warning，2为error，第二位表示是否应用，可选always|never，第三位表示该rule的值。
-    rules: {
+  ignores: [commit => commit.includes('init')],
+  extends: ['@commitlint/config-conventional'],
+  // rule由name和配置数组组成，如：'name: [0, 'always', 72]'，数组中第一位表示level，可选0,1,2，0为disable，1为warning，2为error，第二位表示是否应用，可选always|never，第三位表示该rule的值。
+  rules: {
       'body-leading-blank': [2, 'always'],
       'footer-leading-blank': [1, 'always'],
       'header-max-length': [2, 'always', 108],
       'subject-empty': [2, 'never'],
-      'type-enum': [
-        2,
-        'always',
-        ['ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'build', 'chore', 'revert', 'style', 'test'],
-      ],
+      //      git提交信息规范
+      // feat: 修改/增加新功能 #{禅道需求编号}
+      // fix: 修改bug的变更 #{禅道bug编号}
+      // docs: 文档相关变更
+      // style: 不影响代码含义的变更(空白、格式、缺少符号等)
+      // refactor: 代码重构变更 #{禅道需求编号}
+      // perf: 改进性能的变更
+      // test: 添加/修改现有的测试
+      // chore: Build, .gitignore或辅助工具、库(如文档生成)等变更
+      // log:添加/修改/删除打印日志，调整日志显示级别等
+      'type-enum': [2, 'always', ['docs', 'feat', 'fix', 'style', 'refactor', 'perf', 'test', 'chore', 'log']],
       'type-empty': [2, 'never'], // <type> 不能为空
       // 'type-case': [2, 'always', 'lower-case'], // <type>格式小写
       'type-case': [0],
@@ -45,20 +49,18 @@ module.exports = {
       'subject-full-stop': [0, 'never'],
       // 'subject-case': [2, 'never', 'lower-case'],
       'subject-case': [0, 'never'],
-        // case可选值
-        // 'lower-case' 小写 lowercase
-        // 'upper-case' 大写 UPPERCASE
-        // 'camel-case' 小驼峰 camelCase
-        // 'kebab-case' 短横线 kebab-case
-        // 'pascal-case' 大驼峰 PascalCase
-        // 'sentence-case' 首字母大写 Sentence case
-        // 'snake-case' 下划线 snake_case
-        // 'start-case' 所有首字母大写 start-case
-  
+      // case可选值
+      // 'lower-case' 小写 lowercase
+      // 'upper-case' 大写 UPPERCASE
+      // 'camel-case' 小驼峰 camelCase
+      // 'kebab-case' 短横线 kebab-case
+      // 'pascal-case' 大驼峰 PascalCase
+      // 'sentence-case' 首字母大写 Sentence case
+      // 'snake-case' 下划线 snake_case
+      // 'start-case' 所有首字母大写 start-case
+
       'header-max-length': [0, 'always', 72], // header 最长72
       // 'body-leading-blank': [2, 'always'], // body换行
       // 'footer-leading-blank': [1, 'always'], // <footer> 以空行开头
- 
-    },
-  };
-  
+  },
+}

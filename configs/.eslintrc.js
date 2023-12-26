@@ -55,7 +55,8 @@ module.exports = defineConfig({
     'vue/no-mutating-props': 'warn',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'none' }],
+    // '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'none' }], 未使用变量不允许存在
+    '@typescript-eslint/no-unused-vars': ['off', { vars: 'all', args: 'none' }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',

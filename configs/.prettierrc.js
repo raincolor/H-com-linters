@@ -1,6 +1,9 @@
 module.exports = {
-    printWidth: 100,
-    semi: true,
+    "arrowParens": "avoid",
+    "semi": false,
+    "jsxSingleQuote": true,
+    "bracketSpacing": true,
+    printWidth: 135,
     vueIndentScriptAndStyle: true,
     singleQuote: true,
     trailingComma: 'all',
