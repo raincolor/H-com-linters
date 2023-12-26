@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/raincolor/H-com-linters/compare/v1.8.0...v1.9.0) (2023-12-26)
+
+
+### Features
+
+* 修复install 路径问题 ([24f2233](https://github.com/raincolor/H-com-linters/commit/24f22339598d63e50208a28fafde7c3420865a60))
+
 # [1.8.0](https://github.com/raincolor/H-com-linters/compare/v1.7.0...v1.8.0) (2023-12-26)
 
 
