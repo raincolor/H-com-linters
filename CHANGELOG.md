@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/raincolor/H-com-linters/compare/v1.9.0...v1.10.0) (2023-12-28)
+
+
+### Features
+
+* 规则改动 for sass ([800a8b4](https://github.com/raincolor/H-com-linters/commit/800a8b40db52e79c63a80263a690ec2f25dca112))
+
 # [1.9.0](https://github.com/raincolor/H-com-linters/compare/v1.8.0...v1.9.0) (2023-12-26)
 
 
