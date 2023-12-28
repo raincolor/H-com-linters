@@ -24,6 +24,12 @@ module.exports = {
               ignoreUnits: ['rpx'],
           },
       ],
+      'selector-type-no-unknown': [
+          true,
+          {
+              ignoreTypes: ['swiper', 'swiper-item'],
+          },
+      ],
       // 类名命名规则 正则 默认情况下，这个规则的值是 ["^([a-z][a-z0-9])(-[a-z0-9]+)$", { "message": "Expected class selector ".sort_text" to be kebab-case" }]。这个正则表达式用于检查类选择器是否符合 kebab-case 命名方式
       'selector-class-pattern': null,
       'color-hex-length': 'long',
