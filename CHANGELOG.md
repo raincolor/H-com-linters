@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/raincolor/H-com-linters/compare/v1.10.0...v1.11.0) (2024-01-02)
+
+
+### Features
+
+* 已存在配置不会被替换 ([f0dd6a4](https://github.com/raincolor/H-com-linters/commit/f0dd6a49a99404bb1d69b5feaaa4899eb97732d5))
+* 配置调整 ([b06739a](https://github.com/raincolor/H-com-linters/commit/b06739ad08169c9430fa00e3a60c776358a102a7))
+
 # [1.10.0](https://github.com/raincolor/H-com-linters/compare/v1.9.0...v1.10.0) (2023-12-28)
 
 
