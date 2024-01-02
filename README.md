@@ -1,6 +1,6 @@
 # h-com-linters Configs
 
-Vue3 项目的 husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合
+Vue 项目的 husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合
 
 # 目 录 结 构
 ```
@@ -8,7 +8,7 @@ configs // .husky+commitlint+eslint + stylelint + prettier + commitlint等 配�
     -- .husky // git hooks .husky文件配置
     -- .commitlintrc.js // commitlint配置
     -- .eslintignore.ts // eslint忽略配置
-    -- .eslintrc.js // eslint配置
+    -- .eslintrc// eslint配置
     -- .prettierrc.js // prettier配置（美化代码）
     -- .stylelintrc.js // stylelint配置
     --  tsconfig.json // 
@@ -32,9 +32,10 @@ npm install h-com -linters
 3.在 package.json 中添加
 
 ```
-// windows
+// windows 
 "scripts": {
-    "prepare": "h-com-linters install",
+    "prepare": "h-com-linters install", //ts 项目
+    "prepare": "h-com-linters install --js", //js 项目 
 }
 // mac pre-commit等在mac下不被认可为可执行文件
 "scripts": {
