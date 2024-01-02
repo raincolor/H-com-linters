@@ -7,10 +7,11 @@ const l = (msg: string): void => console.log(`h-com-linters - ${msg}`);
 const notCopyWhenExistRule = /tsconfig\.json$/;
 export  function  create(x:string):void{
 
+
   fs.mkdirSync(x)
-  if(!fs.existsSync('package1.json')){
+  if(!fs.existsSync('package.json')){
    
-    const originalPackageJson =   fs.readFileSync(p.join('./','packageTemp.json'),'utf8');
+    const originalPackageJson =   fs.readFileSync(p.join(__dirname,'../packageTemp.json'),'utf8');
 
     fs.writeFile(p.join(x, './package.json'), originalPackageJson, function(err) {
       if(err) {
@@ -29,6 +30,8 @@ export  function  create(x:string):void{
       {
         recursive: true,
         filter(source, destination) {
+          console.log(  p.join(__dirname, "../configs"),x,__dirname,p.join(x),source,destination)
+       
           // 不能直接覆盖原有的tsconfig。json
           if (notCopyWhenExistRule.test(source) && fs.existsSync(destination)) {
             l(

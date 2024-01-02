@@ -18,10 +18,10 @@ export function install(dir = "."): void {
   // Ensure that we're inside a git repository
   // If git command is not found, status is null and we should return.
   // That's why status value needs to be checked explicitly.
-  if (npx(["husky", "install"]).status !== 0) {
-    l(`npx command not found, skipping install`);
-    return;
-  }
+  // if (npx(["husky", "install"]).status !== 0) {
+  //   l(`npx command not found, skipping install`);
+  //   return;
+  // }
 
   try {
     fs.cp(
@@ -30,11 +30,18 @@ export function install(dir = "."): void {
       {
         recursive: true,
         filter(source, destination) {
+          // debugger
 
-          // 不能直接覆盖原有的tsconfig.json
-          if (notCopyWhenExistRule.test(source) && fs.existsSync(destination)) {
+          // // 不能直接覆盖原有的tsconfig.json
+          // if (notCopyWhenExistRule.test(source) && fs.existsSync(destination)) {
+          //   l(
+          //     "tsconfig.json already exists, if you want to use the file in h-com-linters, please delete it first"
+          //   );
+          //   return false;
+          // }
+               if (source.includes('configs\\')&&fs.existsSync(destination)) {
             l(
-              "tsconfig.json already exists, if you want to use the file in h-com-linters, please delete it first"
+              destination + " already exists, if you want to use the file in h-com-linters, please delete it first"
             );
             return false;
           }
