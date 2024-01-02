@@ -18,10 +18,10 @@ export function install(dir = "."): void {
   // Ensure that we're inside a git repository
   // If git command is not found, status is null and we should return.
   // That's why status value needs to be checked explicitly.
-  // if (npx(["husky", "install"]).status !== 0) {
-  //   l(`npx command not found, skipping install`);
-  //   return;
-  // }
+  if (npx(["husky", "install"]).status !== 0) {
+    l(`npx command not found, skipping install`);
+    return;
+  }
 
   try {
     fs.cp(
