@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/raincolor/H-com-linters/compare/v1.11.0...v1.11.1) (2024-01-02)
+
+
+### Bug Fixes
+
+* commander包不兼容 ([5a161ec](https://github.com/raincolor/H-com-linters/commit/5a161ecda1d29a2a8cd6279c5293f4bab3f4c0b8))
+
 # [1.11.0](https://github.com/raincolor/H-com-linters/compare/v1.10.0...v1.11.0) (2024-01-02)
 
 
