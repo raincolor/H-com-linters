@@ -1,7 +1,7 @@
 {
   "name": "h-com-linters",
   "version": "1.11.1",
-  "description": "Vue3项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
+  "description": "Vue项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
   "bin": "lib/bin.js",
   "main": "lib/index.js",
   "author": "raincolor",
