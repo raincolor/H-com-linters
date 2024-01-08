@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/raincolor/H-com-linters/compare/v1.12.0...v1.13.0) (2024-01-08)
+
+
+### Features
+
+* update ([caa6cbf](https://github.com/raincolor/H-com-linters/commit/caa6cbf95e9d1e4b5afc29202df8146f311fcf35))
+
 # [1.12.0](https://github.com/raincolor/H-com-linters/compare/v1.11.1...v1.12.0) (2024-01-08)
 
 
