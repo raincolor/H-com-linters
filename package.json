@@ -1,7 +1,7 @@
 {
   "name": "h-com-linters",
   "version": "1.11.1",
-  "description": "Vue项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
+  "description": "Vue3项目的husky + lint-staged + eslint + stylelint + prettier + commitlint 配置集合",
   "bin": "lib/bin.js",
   "main": "lib/index.js",
   "author": "raincolor",
@@ -39,8 +39,8 @@
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.9",
     "prettier": "^3.0.0",
-    "stylelint": "15.10.2",
-    "stylelint-config-standard-vue": "1.0.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-order": "^6.0.3",
     "vue-eslint-parser": "^9.3.1"
   },
