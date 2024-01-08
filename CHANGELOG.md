@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/raincolor/H-com-linters/compare/v1.11.1...v1.12.0) (2024-01-08)
+
+
+### Features
+
+* 固定版本号 ([217035d](https://github.com/raincolor/H-com-linters/commit/217035df9092526b296ab65002ac58b04a7ea3f9))
+
 ## [1.11.1](https://github.com/raincolor/H-com-linters/compare/v1.11.0...v1.11.1) (2024-01-02)
 
 
